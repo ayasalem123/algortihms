@@ -1,0 +1,18 @@
+ALGORITHM sentence
+VAR 
+    nwords,long,nvowels:INTEGER:=0;
+   c:CHAR;
+    ph:STRING:="";
+BEGIN
+	REPEAT
+		read(c);
+		log:=long+1
+		ph:=ph+c;
+		IF(c=" ") THEN
+			nwords:=nwords+1
+		END_IF
+		IF(c="A" Or c="E" Or c="u" Or c="i")
+     			nvowels:=nvowels+1
+             END_IF
+      until(c=".")
+END
